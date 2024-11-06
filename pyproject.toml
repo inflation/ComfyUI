@@ -1,0 +1,87 @@
+[project]
+name = "comfyui"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "torch==2.5.1+cu124",
+  "torchvision==0.20.1",
+  "torchaudio==2.5.1",
+  "triton",
+  "torchsde",
+  "einops",
+  "transformers>=4.28.1",
+  "tokenizers>=0.13.3",
+  "sentencepiece",
+  "safetensors>=0.4.2",
+  "aiohttp",
+  "pyyaml",
+  "Pillow",
+  "scipy",
+  "tqdm",
+  "psutil",
+  # non essential dependencies:
+  "kornia>=0.7.1",
+  "spandrel",
+  "soundfile",
+  # ComfyUI_essentials
+  "numba",
+  "colour-science",
+  "rembg",
+  "pixeloe",
+  "transparent-background",
+  # ComfyUI-GGUF
+  "gguf>=0.9.1",
+  "numpy<2.0.0",
+  # ComfyUI-Impact-Pack
+  "segment-anything",
+  "scikit-image",
+  "piexif",
+  # "opencv-python-headless",
+  "GitPython",
+  "scipy",
+  "dill",
+  "matplotlib==3.8",
+  "ultralytics!=8.2.87",
+  # ComfyUI-Manager
+  "PyGithub",
+  "matrix-client==0.4.0",
+  "huggingface-hub>0.20",
+  "typer",
+  "rich",
+  "typing-extensions",
+  # ComfyUI-Manager
+  "PyGithub",
+  "matrix-client==0.4.0",
+  "huggingface-hub>0.20",
+  "typer",
+  "rich",
+  "typing-extensions",
+  # efficiency-nodes-comfyui
+  "clip-interrogator",
+  "simpleeval",
+  # KJNodes
+  "pillow>=10.3.0",
+  "color-matcher",
+  "matplotlib",
+  "mss",
+  "opencv-python",
+  # Browser
+  "tqdm",
+  "pandas",
+  "numpy",
+  "requests",
+  "urllib3",
+  # ComfyUI-ODE
+  "torchdiffeq",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+triton = { path = "C:/opt/wheels/triton-3.1.0-cp312-cp312-win_amd64.whl" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124/"
+explicit = true
