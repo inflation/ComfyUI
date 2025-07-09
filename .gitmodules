@@ -7,3 +7,9 @@
 [submodule "custom_nodes/cg-image-filter"]
 	path = custom_nodes/cg-image-filter
 	url = https://github.com/chrisgoringe/cg-image-filter
+[submodule "custom_nodes/ComfyUI-KJNodes"]
+	path = custom_nodes/ComfyUI-KJNodes
+	url = https://github.com/kijai/ComfyUI-KJNodes
+[submodule "custom_nodes/ComfyUI-utils-nodes"]
+	path = custom_nodes/ComfyUI-utils-nodes
+	url = https://github.com/zhangp365/ComfyUI-utils-nodes
