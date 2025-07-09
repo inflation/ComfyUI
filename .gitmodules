@@ -13,3 +13,6 @@
 [submodule "custom_nodes/ComfyUI-utils-nodes"]
 	path = custom_nodes/ComfyUI-utils-nodes
 	url = https://github.com/zhangp365/ComfyUI-utils-nodes
+[submodule "custom_nodes/ComfyUI-Custom-Scripts"]
+	path = custom_nodes/ComfyUI-Custom-Scripts
+	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts
