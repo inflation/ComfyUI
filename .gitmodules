@@ -19,3 +19,6 @@
 [submodule "custom_nodes/ComfyUI-TiledDiffusion"]
 	path = custom_nodes/ComfyUI-TiledDiffusion
 	url = https://github.com/shiimizu/ComfyUI-TiledDiffusion
+[submodule "custom_nodes/rgthree-comfy"]
+	path = custom_nodes/rgthree-comfy
+	url = https://github.com/rgthree/rgthree-comfy.git
