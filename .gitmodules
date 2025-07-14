@@ -1,0 +1,3 @@
+[submodule "custom_nodes/ComfyUI-Gallery"]
+	path = custom_nodes/ComfyUI-Gallery
+	url = https://github.com/PanicTitan/ComfyUI-Gallery
