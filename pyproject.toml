@@ -42,7 +42,7 @@ dependencies = [
   "matplotlib>=3.9.4",
   "huggingface-hub>=0.33.1",
   "mss>=10.0.0",
-  "opencv-python>=4.11.0.86",
+  "opencv-python>=4.12",
   # ComfyUI-Impact-Pack & Subpack
   "split",
   "segment-anything",
@@ -55,6 +55,23 @@ dependencies = [
   # ComfyUI-Gallery
   "watchdog",
   "asyncio",
+  # comfyui_controlnet_aux
+  "importlib-metadata",
+  "filelock",
+  "python-dateutil",
+  # "mediapipe",
+  "svglib",
+  "fvcore",
+  "yapf",
+  "omegaconf",
+  "ftfy",
+  "addict",
+  "yacs",
+  "trimesh[easy]",
+  "albumentations",
+  "scikit-learn",
+  "onnxruntime>=1.22.1",
+  "onnxruntime-gpu>=1.22.0",
 ]
 
 [project.urls]
