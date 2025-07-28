@@ -25,3 +25,6 @@
 [submodule "custom_nodes/comfyui_controlnet_aux"]
 	path = custom_nodes/comfyui_controlnet_aux
 	url = https://github.com/Fannovel16/comfyui_controlnet_aux
+[submodule "custom_nodes/ComfyUI-Crystools"]
+	path = custom_nodes/ComfyUI-Crystools
+	url = https://github.com/crystian/ComfyUI-Crystools
