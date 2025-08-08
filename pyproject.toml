@@ -77,6 +77,12 @@ dependencies = [
   "deepdiff",
   "pynvml",
   "py-cpuinfo",
+  # ComfyUI-Lora-Manager
+  "jinja2>=3.1.6",
+  "olefile>=0.47",
+  "toml>=0.10.2",
+  "natsort>=8.4.0",
+  "gitpython>=3.1.45",
 ]
 
 [project.urls]

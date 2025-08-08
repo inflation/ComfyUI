@@ -28,3 +28,6 @@
 [submodule "custom_nodes/ComfyUI-Crystools"]
 	path = custom_nodes/ComfyUI-Crystools
 	url = https://github.com/crystian/ComfyUI-Crystools
+[submodule "custom_nodes/ComfyUI-Lora-Manager"]
+	path = custom_nodes/ComfyUI-Lora-Manager
+	url = https://github.com/willmiao/ComfyUI-Lora-Manager.git
