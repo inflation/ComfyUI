@@ -1,6 +1,6 @@
 [project]
 name = "ComfyUI"
-version = "0.3.56"
+version = "0.3.57"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
@@ -14,7 +14,7 @@ dependencies = [
   "triton-windows; sys_platform == 'win32'",
   #
   "comfyui-frontend-package==1.25.11",
-  "comfyui-workflow-templates==0.1.70",
+  "comfyui-workflow-templates==0.1.75",
   "comfyui-embedded-docs==0.2.6",
   "numpy>=1.25.0",
   "einops",
@@ -25,7 +25,7 @@ dependencies = [
   "aiohttp>=3.11.8",
   "yarl>=1.18.0",
   "pyyaml",
-  "pillow>=9.5.0",
+  "pillow>=10.3.0",
   "scipy>=1.11.4",
   "tqdm",
   "psutil",
@@ -43,7 +43,7 @@ dependencies = [
   "matplotlib>=3.9.4",
   "huggingface-hub>=0.33.1",
   "mss>=10.0.0",
-  "opencv-python>=4.12",
+  "opencv-python>=4.7.0.72",
   # ComfyUI-Impact-Pack & Subpack
   "split",
   "segment-anything",
@@ -52,7 +52,7 @@ dependencies = [
   "opencv-python-headless",
   "dill",
   "sam-2",
-  "ultralytics>=8.3.163",
+  "ultralytics>=8.3.162",
   # ComfyUI-Gallery
   "watchdog",
   "asyncio",
@@ -60,7 +60,7 @@ dependencies = [
   "importlib-metadata",
   "filelock",
   "python-dateutil",
-  # "mediapipe",
+  "mediapipe; python_version<='3.12'",
   "svglib",
   "fvcore",
   "yapf",
@@ -75,7 +75,8 @@ dependencies = [
   "onnxruntime-gpu>=1.22.0",
   # ComfyUI-Crystools
   "deepdiff",
-  "pynvml",
+  "pynvml ; platform_machine != 'aarch64'",
+  # "jetson-stats ; platform_machine == 'aarch64'",
   "py-cpuinfo",
   # ComfyUI-Lora-Manager
   "jinja2>=3.1.6",
@@ -131,3 +132,6 @@ explicit = true
 name     = "pytorch-cu129"
 url      = "https://download.pytorch.org/whl/cu129"
 explicit = true
+
+[tool.uv.extra-build-dependencies]
+jetson-stats = ["fcntl"]
