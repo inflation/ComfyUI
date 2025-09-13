@@ -1,6 +1,6 @@
 [project]
 name = "ComfyUI"
-version = "0.3.57"
+version = "0.3.59"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
@@ -14,7 +14,7 @@ dependencies = [
   "triton-windows; sys_platform == 'win32'",
   #
   "comfyui-frontend-package==1.25.11",
-  "comfyui-workflow-templates==0.1.75",
+  "comfyui-workflow-templates==0.1.78",
   "comfyui-embedded-docs==0.2.6",
   "numpy>=1.25.0",
   "einops",
@@ -71,7 +71,6 @@ dependencies = [
   "trimesh[easy]",
   "albumentations",
   "scikit-learn",
-  "onnxruntime>=1.22.1",
   "onnxruntime-gpu>=1.22.0",
   # ComfyUI-Crystools
   "deepdiff",
@@ -84,6 +83,8 @@ dependencies = [
   "toml>=0.10.2",
   "natsort>=8.4.0",
   "gitpython>=3.1.45",
+  "aiosqlite",
+  "beautifulsoup4",
 ]
 
 [project.urls]
