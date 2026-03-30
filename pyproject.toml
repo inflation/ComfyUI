@@ -4,6 +4,69 @@ version = "0.19.1"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
+dependencies = [
+    "comfyui-frontend-package==1.42.11",
+    "comfyui-workflow-templates==0.9.54",
+    "comfyui-embedded-docs==0.4.3",
+    "torch>=2.11",
+    "torchsde",
+    "torchvision",
+    "torchaudio",
+    "numpy>=1.25.0",
+    "einops",
+    "transformers>=4.50.3",
+    "tokenizers>=0.13.3",
+    "sentencepiece",
+    "safetensors>=0.4.2",
+    "aiohttp>=3.11.8",
+    "yarl>=1.18.0",
+    "pyyaml",
+    "pillow",
+    "scipy",
+    "tqdm",
+    "psutil",
+    "alembic",
+    "sqlalchemy",
+    "filelock",
+    "av>=14.2.0",
+    "comfy-kitchen>=0.2.8",
+    "comfy-aimdo>=0.2.12",
+    "requests",
+    "simpleeval>=1.0.0",
+    "blake3",
+    # non essential
+    "kornia>=0.7.1",
+    "spandrel",
+    "pydantic~=2.0",
+    "pydantic-settings~=2.0",
+    "pyopengl",
+    "glfw",
+    "triton; sys_platform == 'linux'",
+    "triton-windows; sys_platform == 'win32'",
+    # ComfyUI-Gallery
+    "piexif",
+    "watchdog",
+    "asyncio",
+    # ComfyUI-Lora-Manager
+    "jinja2",
+    "olefile",
+    "toml",
+    "natsort",
+    "GitPython",
+    "aiosqlite",
+    "beautifulsoup4",
+    "platformdirs",
+    # ComfyUI-SeedVR2_VideoUpscalar
+    "omegaconf>=2.3.0",
+    "diffusers>=0.33.1",
+    "peft>=0.17.0",
+    "rotary_embedding_torch>=0.5.3",
+    "gguf",
+    "matplotlib",
+    "opencv-python>=4.13.0.92",
+    "pywavelets>=1.8.0",
+    "flash-attn",
+]
 
 [project.urls]
 homepage = "https://www.comfy.org/"
@@ -73,3 +136,28 @@ messages_control.disable = [
   "no-else-return",
   "unused-variable",
 ]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu130", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cpu", marker = "sys_platform == 'darwin'" },
+]
+torchvision = [
+  { index = "pytorch-cu130", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cpu", marker = "sys_platform == 'darwin'" },
+]
+torchaudio = [
+  { index = "pytorch-cu130", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cpu", marker = "sys_platform == 'darwin'" },
+]
+flash-attn = { path = "C:/opt/wheels/flash_attn-2.8.4+cu130torch2.11.0cxx11abiFALSEfullbackward-cp311-cp311-win_amd64.whl", marker = "sys_platform == 'win32'" }
+
+[[tool.uv.index]]
+name     = "pytorch-cpu"
+url      = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name     = "pytorch-cu130"
+url      = "https://download.pytorch.org/whl/cu130"
+explicit = true

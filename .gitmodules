@@ -1,0 +1,30 @@
+[submodule "custom_nodes/ComfyUI-Gallery"]
+	path = custom_nodes/ComfyUI-Gallery
+	url = https://github.com/PanicTitan/ComfyUI-Gallery
+[submodule "custom_nodes/ComfyUI-Custom-Scripts"]
+	path = custom_nodes/ComfyUI-Custom-Scripts
+	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts
+[submodule "custom_nodes/cg-image-filter"]
+	path = custom_nodes/cg-image-filter
+	url = https://github.com/chrisgoringe/cg-image-filter
+[submodule "custom_nodes/rgthree-comfy"]
+	path = custom_nodes/rgthree-comfy
+	url = https://github.com/rgthree/rgthree-comfy.git
+[submodule "custom_nodes/ComfyUI-Lora-Manager"]
+	path = custom_nodes/ComfyUI-Lora-Manager
+	url = https://github.com/willmiao/ComfyUI-Lora-Manager.git
+[submodule "custom_nodes/seedvr2_videoupscaler"]
+	path = custom_nodes/seedvr2_videoupscaler
+	url = https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler.git
+[submodule "custom_nodes/RES4LYF"]
+	path = custom_nodes/RES4LYF
+	url = https://github.com/ClownsharkBatwing/RES4LYF
+[submodule "custom_nodes/SDXL-Flux2VAE-ComfyUI-Node"]
+	path = custom_nodes/SDXL-Flux2VAE-ComfyUI-Node
+	url = https://github.com/Anzhc/SDXL-Flux2VAE-ComfyUI-Node
+[submodule "custom_nodes/ComfyUI_UltimateSDUpscale"]
+	path = custom_nodes/ComfyUI_UltimateSDUpscale
+	url = https://github.com/ssitu/ComfyUI_UltimateSDUpscale
+[submodule "custom_nodes/ComfyUI-KJNodes"]
+	path = custom_nodes/ComfyUI-KJNodes
+	url = https://github.com/kijai/ComfyUI-KJNodes
