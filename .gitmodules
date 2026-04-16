@@ -28,3 +28,6 @@
 [submodule "custom_nodes/ComfyUI-KJNodes"]
 	path = custom_nodes/ComfyUI-KJNodes
 	url = https://github.com/kijai/ComfyUI-KJNodes
+[submodule "custom_nodes/ComfyUI-ImagePreviewPause"]
+	path = custom_nodes/ComfyUI-ImagePreviewPause
+	url = https://github.com/Cordux/ComfyUI-ImagePreviewPause
