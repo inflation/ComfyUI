@@ -1,18 +1,18 @@
 [project]
 name = "ComfyUI"
-version = "0.19.2"
+version = "0.20.1"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
 dependencies = [
-    "comfyui-frontend-package==1.42.11",
-    "comfyui-workflow-templates==0.9.54",
-    "comfyui-embedded-docs==0.4.3",
+    "comfyui-frontend-package==1.42.15",
+    "comfyui-workflow-templates==0.9.63",
+    "comfyui-embedded-docs==0.4.4",
     "torch>=2.11",
     "torchsde",
     "torchvision",
     "torchaudio",
-    "numpy>=1.25.0",
+    "numpy>=1.26.4",
     "einops",
     "transformers>=4.50.3",
     "tokenizers>=0.13.3",
@@ -21,16 +21,16 @@ dependencies = [
     "aiohttp>=3.11.8",
     "yarl>=1.18.0",
     "pyyaml",
-    "pillow",
+    "pillow>=10.3.0",
     "scipy",
     "tqdm",
     "psutil",
     "alembic",
-    "sqlalchemy",
+    "sqlalchemy>=2.0",
     "filelock",
     "av>=14.2.0",
     "comfy-kitchen>=0.2.8",
-    "comfy-aimdo>=0.2.12",
+    "comfy-aimdo==0.2.14",
     "requests",
     "simpleeval>=1.0.0",
     "blake3",
@@ -52,7 +52,7 @@ dependencies = [
     "olefile",
     "toml",
     "natsort",
-    "GitPython",
+    "gitpython",
     "aiosqlite",
     "beautifulsoup4",
     "platformdirs",
@@ -60,12 +60,16 @@ dependencies = [
     "omegaconf>=2.3.0",
     "diffusers>=0.33.1",
     "peft>=0.17.0",
-    "rotary_embedding_torch>=0.5.3",
+    "rotary-embedding-torch>=0.5.3",
     "gguf",
     "matplotlib",
     "opencv-python>=4.13.0.92",
     "pywavelets>=1.8.0",
     "flash-attn",
+    # ComfyUI-KJNodes
+    "color-matcher",
+    "mss",
+    "opencv-python-headless",
 ]
 
 [project.urls]
